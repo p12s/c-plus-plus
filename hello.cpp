@@ -10,4 +10,7 @@ int main() {
 
   std::cin >> title;
   std::cout << title << std::endl;
+
+  std::getline(std::cin, title);
+  std::cout << title << std::endl;
 }
