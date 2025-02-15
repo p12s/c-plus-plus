@@ -12,15 +12,15 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-
-    - name: configure
-      run: ./configure
-
-    - name: make
-      run: make
-
-    - name: make check
-      run: make check
-
-    - name: make distcheck
-      run: make distcheck
+    
+    - name: Компиляция
+      run: g++ add.cpp -o add
+      
+    - name: Проверка компиляции
+      run: |
+        if [ -f add ]; then
+          echo "✅ Компиляция успешна"
+        else
+          echo "❌ Ошибка компиляции"
+          exit 1
+        fi
