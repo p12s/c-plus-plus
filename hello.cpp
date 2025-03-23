@@ -2,7 +2,7 @@
 #include <string>
 
 int main() {
-  std::cout << "🔥🦆" << std::endl;
+  std::cout << "Fire Duck" << std::endl;
 
   int value = 42;
   std::string title = "Some string";
