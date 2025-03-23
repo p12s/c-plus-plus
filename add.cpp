@@ -6,12 +6,12 @@ int add(const int a, const int b) {
 
 int main() {
     int a, b;
-    std::cout << "Введите первое число: ";
+    std::cout << "Enter first number: ";
     std::cin >> a;
-    std::cout << "Введите второе число: ";
+    std::cout << "Enter second number: ";
     std::cin >> b;
     
-    std::cout << "Сумма: " << add(a, b) << std::endl;
+    std::cout << "Sum: " << add(a, b) << std::endl;
     return 0;
 }
 
